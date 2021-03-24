@@ -24,6 +24,7 @@ function display(){
 function reset(){
     nbr=0;
     set0();
+    display();
 }
 function set0(){
     let chg=document.getElementById("display");

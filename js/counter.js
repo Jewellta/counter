@@ -1,24 +1,29 @@
 
 let nbr =0;
-function loaded(){
+
+set0();
+
+function loaded(){          //old way of forming functions
     display();
 }
 
-function decrement(){
+//const decrement1=() =>{} //new way of forming functions( best practice)
+
+const decrement=() => {
     nbr--;
     display();
 }
-function increment(){
+const increment=() => {
     nbr++;
     display();
 }
 
-function display(){
-    let chg= document.getElementById("display");
-    chg.value= nbr;
-    chg.style.fontStyle= nbr%2==0?"italic": "normal";
-    chg.style.fontWeight= nbr%3==0?"bold": "normal";
-    chg.style.color= nbr%2==0?"red": "black";
+const display=() => {
+    let ctrl= document.getElementById("display");
+    ctrl.value= nbr;
+    ctrl.style.fontStyle= nbr%2==0?"italic": "normal";
+    ctrl.style.fontWeight= nbr%3==0?"bold": "normal";
+    ctrl.style.color= nbr%2==0?"red": "black";
 }
 
 function reset(){

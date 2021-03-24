@@ -4,9 +4,11 @@ body {
 }
 h1{
     text-align: center;
-    margin: 2em 0em 0em 0em;
+    margin: 2em 0em 0em 5.5em;
     border:2px solid black;
-    border-radius:10em;
+    border-radius:1em;
+    width:10em;
+    font-family:Arial, Helvetica, sans-serif;
 }
 h1:hover{
     font-weight:bold;
